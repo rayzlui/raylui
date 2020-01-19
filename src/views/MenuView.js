@@ -2,16 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export function MenuView(props) {
+  const { changeHomescreen } = props;
   return (
-    <nav>
+    <nav className={'anchor__nav'}>
       <a href="#home__view">Home</a>
-      <a href="#bio__view">About Me</a>
-      <a href="#resume__view">Resume</a>
-      <a href="#arcade__view">Arcade</a>
+      <a href="#bio__view" onClick={() => changeHomescreen(false)}>
+        About Me
+      </a>
+      <a href="#resume__view" onClick={() => changeHomescreen(false)}>
+        Resume
+      </a>
+      <a href="#arcade__view" onClick={() => changeHomescreen(false)}>
+        Apps
+      </a>
+      <a href="#contact__view" onClick={() => changeHomescreen(false)}>
+        Contact
+      </a>
     </nav>
   );
 }
 
 MenuView.propTypes = {
-  changePage: PropTypes.func,
+  changeHomescreen: PropTypes.func,
 };
