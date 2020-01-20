@@ -15,7 +15,7 @@ export function ArcadeView() {
 
   return (
     <section id={'arcade__view'}>
-      <h1>Apps I Have Built</h1>
+      <header><h1>Portfolio</h1></header>
       <nav className={'arcade__nav'}>
         <button
           className={'arcade__button'}
@@ -29,6 +29,9 @@ export function ArcadeView() {
         >
           Pokedex
         </button>
+        <a className={'arcade__button'} href={'#home__view'}>
+          This Site!
+        </a>
       </nav>
       {frame}
     </section>
