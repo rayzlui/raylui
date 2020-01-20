@@ -1,21 +1,25 @@
 import React from 'react';
 import { BioView } from './BioView';
-import { HomescreenView } from './HomescreenView';
 import { ResumeView } from './ResumeView';
 import { ArcadeView } from './ArcadeView';
 import PropTypes from 'prop-types';
-import { MenuContainer } from '../containers/MenuContainer';
+import {
+  HomescreenContainer,
+  MenuContainer,
+} from '../containers/HomescreenContainer';
 import { ContactView } from './ContactView';
-import { HeaderView } from './HeaderView';
 
 export function RootView() {
   return (
-    <div className="container">
-      <HeaderView />
+    <div className={`container`}>
+      <HomescreenContainer />
+      <section className={'colorpop'} id={'colorpop1'}></section>
       <BioView />
-      <HomescreenView />
+      <section className={'colorpop'} id={'colorpop2'}></section>
       <ResumeView />
+      <section className={'colorpop'} id={'colorpop3'}></section>
       <ArcadeView />
+      <section className={'colorpop'} id={'colorpop4'}></section>
       <ContactView />
       <MenuContainer />
     </div>
