@@ -1,0 +1,321 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .anchor__nav {
+    position: fixed;
+    right: 0em;
+    z-index: 3;
+    width: 100vw;
+    text-align: center;
+    background-color: black;
+    a{
+      color: white;
+      background-color: black;
+      text-decoration: none;
+      margin: 0 4vw;
+    }
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+section {
+  height: 90vh;
+  width: 100vw;
+  border-bottom: 2px solid rgb(202, 202, 202);
+  padding-top: 10vh;
+  position: relative;
+  background-color: whitesmoke;
+}
+
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+header {
+  left: 5vw;
+  position: relative;
+  width: 90vw;
+}
+
+
+iframe {
+  height: 80%;
+  width: 85%;
+  display: block;
+  left: 7.5%;
+  position: relative;
+}
+
+
+/*class selectors*/
+.fireworks {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+.fade {
+  opacity: 0;
+  transition-duration: 2s;
+  position: absolute;;
+}
+
+#unfade {
+  color: whitesmoke;
+  border-bottom: 2px white solid;
+  left: 0;
+}
+
+.intro__text {
+  padding-bottom: 9%;
+  font-size: 4.5vw;
+  text-align: center;
+}
+
+
+/*menu*/
+.anchor__nav {
+  position: fixed;
+  bottom: 0em;
+  z-index: 3;
+  width: 100vw;
+  text-align: center;
+  background-color: black;
+  a{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    margin: 0 4vw;
+  }
+}
+
+/*nav*/
+.arcade__button {
+  border-radius: 0%;
+  height: 4vh;
+  border: none;
+
+}
+
+#arcade__view{
+  height: 120vh;
+}
+
+.arcade__button:hover{
+  background-color: blue;
+}
+
+.arcade__nav {
+  position: relative;
+  text-align: center;
+  a {
+    text-decoration: none;
+    background-color: white;
+  }
+
+  a, button {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    padding: 9px;
+    background-color: white;
+  }
+
+  a:hover{
+    background-color: blue;
+  }
+
+}
+
+
+
+
+/*homepage + topbar*/
+
+
+.topbar {
+  position: fixed;
+  top: 0em;
+  z-index: 3;
+  width: 100%;
+  background-color: rgba($color: white, $alpha: 1.0);
+  transition-duration: 2s ease-in-out;
+  left: 0;
+}
+
+.header {
+  text-align: center;
+  width: 50vw;
+}
+
+
+.intro {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  top: 20%;
+  transition-duration: 2s ease-in-out;
+  left: 0;
+}
+
+
+.my__name__intro {
+  border-bottom: 2px black solid;
+  color: black;
+  transition-duration: 2s;
+}
+
+.my__name__header {
+  padding: 1% 0;
+  font-size: 3vw;
+  border-bottom: 0.2vh black solid;
+  text-align: center;
+  margin: 0;
+  transition-duration: 2s;
+  line-height: 8vh;
+  background-color: whitesmoke;
+}
+/*resume*/
+.resume__details{
+  position: relative;
+  display: inline-block;
+  left: 5vw;
+  widows: 95vw;
+  header {
+    left: 0vw;
+  }
+  .resume__dates{
+    font-style: italic;
+  }
+}
+
+/*bio*/
+
+#bio__view{
+  figure {
+    position: absolute;
+    left: 7.5vw;
+    height: 45vh;
+    width: 24vw;
+    margin: 0;
+    img{
+      height: 45vh;
+      width: 24vw;
+    }
+  }
+
+  article {
+    position: absolute;
+    right: 7.5vw;
+    height: 50vh;
+    width: 45vw;
+    overflow: auto;
+    p {
+      font-size: 2.5vh;
+      margin: 0;
+    }
+  }
+}
+
+#contact__view {
+  img {
+    height: 10vh;
+    width: 7vw;
+  }
+  height: 80vh;
+  background-color: white;
+}
+
+.contact__icon {
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 30vh;
+}
+
+$calEqualSides: (100-28)/4;
+$dbl: $calEqualSides*2;
+$trpl: $calEqualSides*3;
+$quad: $calEqualSides*4;
+#email__icon {
+  left: $calEqualSides+vw;
+}
+
+#phone__icon{
+  left: $dbl+vw;
+}
+
+#github__icon{
+  left: $trpl+vw;
+}
+
+#linkedin__icon{
+  left: $quad+vw;
+}
+
+#tinder__icon{
+  top: 63vh;
+  left: (100-7)/2+vw;
+  margin: 0;
+}
+
+/*color*/
+.colorpop {
+  height: 70vh;
+  border:none;
+  background-attachment: fixed;
+}
+
+#colorpop1 {
+  background-image: linear-gradient(to top right, white, rgb(6, 6, 165));
+}
+#colorpop2 {
+  background-image: linear-gradient(to top left, white, rgb(73, 1, 73));
+}
+#colorpop3 {
+  background-image: linear-gradient(to bottom left, white, teal);
+}
+#colorpop4 {
+  background-image: linear-gradient(to bottom left, white, rgb(31, 1, 139));
+}
