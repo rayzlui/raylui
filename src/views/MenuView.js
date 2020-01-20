@@ -13,7 +13,7 @@ export function MenuView(props) {
         Resume
       </a>
       <a href="#arcade__view" onClick={() => changeHomescreen(false)}>
-        Apps
+        Portfolio
       </a>
       <a href="#contact__view" onClick={() => changeHomescreen(false)}>
         Contact
