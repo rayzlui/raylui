@@ -13,22 +13,7 @@
   }
 }
 
-@media screen and (max-width: 600px){
-  .anchor__nav {
-    position: fixed;
-    right: 0em;
-    z-index: 3;
-    width: 100vw;
-    text-align: center;
-    background-color: black;
-    a{
-      color: white;
-      background-color: black;
-      text-decoration: none;
-      margin: 0 4vw;
-    }
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -60,7 +45,7 @@ section {
   border-bottom: 2px solid rgb(202, 202, 202);
   padding-top: 10vh;
   position: relative;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 
@@ -145,13 +130,14 @@ iframe {
   background-color: blue;
 }
 
+a {
+  text-decoration: none;
+  background-color: white;
+}
+
 .arcade__nav {
   position: relative;
   text-align: center;
-  a {
-    text-decoration: none;
-    background-color: white;
-  }
 
   a, button {
     color: black;
@@ -165,6 +151,12 @@ iframe {
     background-color: blue;
   }
 
+}
+
+.arcade__code__anchor{
+  text-align: center;
+  display: block;
+  color: black;
 }
 
 
@@ -214,14 +206,17 @@ iframe {
   margin: 0;
   transition-duration: 2s;
   line-height: 8vh;
-  background-color: whitesmoke;
+  background-color: white;
 }
 /*resume*/
 .resume__details{
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  display: block;
   left: 5vw;
-  widows: 95vw;
+  width: 90vw;
+  height: 70vh;
+  overflow: auto;
+  font-size: 2vh;
   header {
     left: 0vw;
   }
@@ -249,7 +244,7 @@ iframe {
     position: absolute;
     right: 7.5vw;
     height: 50vh;
-    width: 45vw;
+    width: 50vw;
     overflow: auto;
     p {
       font-size: 2.5vh;
@@ -258,9 +253,13 @@ iframe {
   }
 }
 
+article {
+  background-image: linear-gradient(to left, white, whitesmoke);
+}
+
 #contact__view {
   img {
-    height: 10vh;
+    height: 7vw;
     width: 7vw;
   }
   height: 80vh;
