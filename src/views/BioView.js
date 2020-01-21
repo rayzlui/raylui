@@ -28,14 +28,15 @@ export function BioView(props) {
         </p>
         <hr />
         <p>
-          I earned a Bachelor of Science in Mathematics from UC Santa Barbara. I
-          worked in finance for a bit and then decided to start my own business
-          that revolved around my passion of fashion (I'm not a huge fan of how
-          that rhymed ugh). After a few years doing that, I decided it was time
-          for a and decided to learn how to code, so here I am! While I still
-          have a lot to learn, I have received a level where I believe I can
-          bring bring value to a company seeking a developer. I am a keen
-          problem solver and relentless when I come across a difficult problem.
+          I earned a Bachelor of Science in Mathematics from UC Santa Barbara
+          (yay Gauchos!). I worked in finance for a bit and then decided to
+          start my own business that revolved around my passion for fashion (I'm
+          not a huge fan of how that rhymed ugh). After a few years doing that,
+          I decided it was time for a change and decided to learn how to code,
+          so here I am! While I still have a lot to learn, I believe I can bring
+          value to a company as a software developer. I am a keen problem solver
+          and relentless when I come come across a difficult problem. Plus I'm
+          kind of funny?
         </p>
         <hr />
         <p>

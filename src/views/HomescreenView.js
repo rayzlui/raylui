@@ -1,11 +1,11 @@
-import React, { useState }  from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 export function HomescreenView(props) {
   let { isHeader, changeHomescreen } = props;
 
   function handleScroll(e) {
-    if (e.target.defaultView){
+    if (e.target.defaultView) {
       if (e.target.defaultView.scrollY < 200) {
         changeHomescreen(true);
       } else {
@@ -15,12 +15,14 @@ export function HomescreenView(props) {
   }
 
   let [opening, changeOpening] = useState('');
-  let [textColor, changeText] = useState('unfade')
+  let [textColor, changeText] = useState('unfade');
+  let [showFunny, changeFunny] = useState('hide__funny');
   setTimeout(() => {
     changeOpening('fade');
   }, 800);
   setTimeout(() => {
     changeText('');
+    changeFunny('show__funny');
   }, 1700);
 
   let isTopBar = isHeader
@@ -35,8 +37,18 @@ export function HomescreenView(props) {
         alt={'fireworks!!'}
       />
       <header className={`${isTopBar[0]}`}>
-        <h1 className={`intro__text ${isTopBar[1]}`} id={`${textColor}`}>Raymond Lui</h1>
+        <h1 className={`intro__text ${isTopBar[1]}`} id={`${textColor}`}>
+          Raymond Lui
+        </h1>
       </header>
+      <section className={`${showFunny}`}>
+        <p className={`funny__intro`}>
+          <span className={`funny1`}>Software Engineer</span>
+          <span className={`funny2`}>Fashionista</span>
+          <span className={`funny3`}>Future Contestant on Top Chef</span>
+        </p>
+        <p className={`funny__intro funny4`}>In that order.</p>
+      </section>
     </section>
   );
 }
