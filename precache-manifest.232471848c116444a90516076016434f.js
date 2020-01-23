@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "719d21c5127fb8b99ce11c42961e8b4c",
+    "revision": "4619b609f578ae7e95d48fdaa59f9ea4",
     "url": "/raylui/index.html"
   },
   {
-    "revision": "f13519e24dc0a037800d",
-    "url": "/raylui/static/css/main.e467be56.chunk.css"
+    "revision": "1bfde46a385f03290028",
+    "url": "/raylui/static/css/main.a9d3417d.chunk.css"
   },
   {
     "revision": "948c52d5a5300e4c6eff",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raylui/static/js/2.667e64b2.chunk.js.LICENSE"
   },
   {
-    "revision": "f13519e24dc0a037800d",
+    "revision": "1bfde46a385f03290028",
     "url": "/raylui/static/js/main.211fded0.chunk.js"
   },
   {

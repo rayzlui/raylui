@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/raylui/precache-manifest.128161d43a8684d786e88ef37672d794.js"
+  "/raylui/precache-manifest.232471848c116444a90516076016434f.js"
 );
 
 self.addEventListener('message', (event) => {
