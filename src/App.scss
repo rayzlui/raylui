@@ -46,6 +46,7 @@ section {
   padding-top: 10vh;
   position: relative;
   background-color: white;
+  background-attachment: fixed;;
 }
 
 
@@ -195,20 +196,17 @@ a {
       padding-left: 1vw;
       padding-right: 1vw;
     }
-    .funny1{
-      transition-delay:  1s;
-    }
     .funny2{
-      transition-delay:  3s;
+      transition-delay:  0.8s;
     }
     .funny3{
-      transition-delay:  5s;
+      transition-delay:  1.6s;
     }
     
     margin: 0;
   }
   p.funny4{
-    transition-delay:  7s;
+    transition-delay:  2.4s;
   }
   height: auto;
   width:fit-content;
