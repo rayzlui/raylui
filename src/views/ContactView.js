@@ -10,7 +10,11 @@ export function ContactView() {
         <h1>HIT ME UP?</h1>
       </header>
 
-      <a id={'email__icon'}  className={'contact__icon'}  href={'mailto:rayzlui@gmail.com'}>
+      <a
+        id={'email__icon'}
+        className={'contact__icon'}
+        href={'mailto:rayzlui@gmail.com'}
+      >
         <img
           src={
             'http://icons.iconarchive.com/icons/igh0zt/ios7-style-metro-ui/256/MetroUI-Other-Mail-icon.png'
