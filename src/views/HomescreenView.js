@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { FunnyIntro } from './FunnyIntro';
 
 export function HomescreenView(props) {
   let { isHeader, changeHomescreen } = props;
@@ -41,14 +42,7 @@ export function HomescreenView(props) {
           Raymond Lui
         </h1>
       </header>
-      <section className={`${showFunny}`}>
-        <p className={`funny__intro`}>
-          <span className={`funny1`}>Software Engineer.</span>
-          <span className={`funny2`}>Fashionista.</span>
-          <span className={`funny3`}>Future Contestant on Top Chef Canada.</span>
-        </p>
-        <p className={`funny__intro funny4`}>In that order.</p>
-      </section>
+      <FunnyIntro showFunny={showFunny} />
     </section>
   );
 }
